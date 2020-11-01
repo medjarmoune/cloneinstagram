@@ -26,14 +26,13 @@ const Singup = () => {
         data.append("file", image)
         data.append("upload_preset", "insta-clone")
         data.append("cloud_name", "yes")
-        fetch("https://res.cloudinary.com/jarmoune/image/upload/v1603637314/default-avatar-profile-icon-vector-social-media-user-image-182145777_tcjxma.jpg", {
+        fetch("https://api.cloudinary.com/v1_1/jarmoune/image/upload", {
             method:"post",
             body:data
         })
         .then(res => res.json())
         .then(data=>{
             setUrl(data.url)
-            history.push('/signin')
         })
         .catch(err => {
             console.log(err);

@@ -14,11 +14,11 @@ const userSchema = new mongoose.Schema({
         type:String,
         required:true
     },
-    resetToken:String,
-    expireToken:Date,
+    // resetToken:String,
+    // expireToken:Date,
     pic:{
         type:String,
-        default:"https://res.cloudinary.com/jarmoune/image/upload/v1603637314/495-4952535_create-digital-profile-icon-blue-user-profile-icon_ipcsah.png"
+        default:"https://res.cloudinary.com/jarmoune/image/upload/v1603637314/default-avatar-profile-icon-vector-social-media-user-image-182145777_tcjxma.jpg"
     },
     followers:[{type:ObjectId,ref:"User"}],
     following:[{type:ObjectId,ref:"User"}]
