@@ -42,7 +42,9 @@ a{
   height: max-content;
   margin: 26px auto;
 }
-
+.collection-item{
+  width:100%;
+}
 #toast-container{
   top: 30px !important;
   right: 20px !important;
